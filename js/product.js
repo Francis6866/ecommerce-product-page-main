@@ -5,13 +5,20 @@
     const mainImage = document.querySelector('.product__image-main img');
     const thumbnails = document.querySelectorAll('.product__thumbnail img');
 
+    // add the active class to the first image onload
+    thumbnails.forEach(thumbnail => {
+        if(thumbnail.alt === `Thumbnail 1`){
+            thumbnail.classList.add('active');
+        }
+    })
+
     thumbnails.forEach(thumbnail => {
       thumbnail.addEventListener('click', () => {
         // Replace main image source with the clicked thumbnail
         mainImage.src = thumbnail.src.replace('-thumbnail', '');
         // Optional: highlight active thumbnail
-        // thumbnails.forEach(t => t.classList.remove('active'));
-        // thumbnail.classList.add('active');
+        thumbnails.forEach(t => t.classList.remove('active'));
+        thumbnail.classList.add('active');
       });
     });
 
@@ -45,7 +52,7 @@
         updateMainImage(currentImageIndex);
       });
 
-      
+
 
     // === Quantity Buttons ===
     const qtyDisplay = document.querySelector('.product__qty-value');
@@ -72,14 +79,14 @@
     });
 
     // === Add to Cart Button ===
-    const addToCartBtn = document.querySelector('.product__button');
+    // const addToCartBtn = document.querySelector('.product__button');
 
-    addToCartBtn.addEventListener('click', () => {
-      if (quantity === 0) {
-        alert('Please add at least one item to your cart.');
-        return;
-      }
-      alert(`${quantity} item(s) added to your cart!`);
-      // You can extend this to actually update a cart system
-    });
+    // addToCartBtn.addEventListener('click', () => {
+    //   if (quantity === 0) {
+    //     alert('Please add at least one item to your cart.');
+    //     return;
+    //   }
+    //   alert(`${quantity} item(s) added to your cart!`);
+    //   // You can extend this to actually update a cart system
+    // });
   });

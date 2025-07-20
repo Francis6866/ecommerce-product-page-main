@@ -27,6 +27,24 @@
     font-weight: bold;
     color: #1d2025;
   }
+
+  /* Cart badge */
+.header__cart {
+  position: relative;
+}
+
+.header__cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color: #ff7d1a;
+  color: white;
+  font-size: 0.65rem;
+  font-weight: bold;
+  padding: 0.2em 0.5em;
+  border-radius: 12px;
+  display: none;
+}
   
   /* === Desktop Navigation === */
   .header__nav--desktop {

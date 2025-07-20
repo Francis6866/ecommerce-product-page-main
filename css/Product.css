@@ -1,6 +1,4 @@
-
-  
-  /* ============
+   /* ============
      Layout 
      ============ */
   
@@ -67,6 +65,10 @@
     border-color: #FF7E1B;
   }
   
+  .active {
+    opacity: 50%;
+  }
+
   /* Product Details */
   
   .product__details {
