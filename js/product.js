@@ -46,6 +46,7 @@
       });
 
       
+
     // === Quantity Buttons ===
     const qtyDisplay = document.querySelector('.product__qty-value');
     const btnIncrease = document.querySelector('.product__qty-btn--increase');
