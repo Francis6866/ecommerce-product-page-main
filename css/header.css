@@ -63,11 +63,13 @@
     padding-bottom: 0.5rem;
     transition: all 0.3s;
   }
-  .nav__link--active {
+
+  /* .nav__link--active {
     color: #1d2025;
     font-weight: bold;
     border-bottom: 3px solid #ff7d1a;
-  }
+  } */
+
   .nav__link:hover {
     color: #ff7d1a;
     font-weight: bold;
@@ -80,6 +82,7 @@
     gap: 1.5rem;
     align-items: center;
   }
+
   .header__avatar img {
     width: 35px;
     border-radius: 50%;
@@ -116,10 +119,10 @@
     font-size: 1.2rem;
     color: #1d2025;
   }
-  .mobile-menu__link--active {
+  /* .mobile-menu__link--active {
     color: #ff7d1a;
     font-weight: bold;
-  }
+  } */
   
   /* === Responsive === */
   @media (max-width: 768px) {
